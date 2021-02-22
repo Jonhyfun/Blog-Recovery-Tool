@@ -58,7 +58,7 @@ namespace Blog_Recovery_Tool
 
         private void txtUrl_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == (char)Keys.Enter)
+            if(e.KeyChar == (char)Keys.Enter && txtID.Text!="")
                 btnPost_Click(sender, e);
         }
         private void btnImport_Click(object sender, EventArgs e)
